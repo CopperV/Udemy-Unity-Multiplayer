@@ -172,7 +172,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1810075353
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 1a838243856331f4681c559527ad5846, type: 3}
@@ -355,7 +355,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1810075353
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 20
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 9d8bd4f8481a773488649b18bd02cbc1, type: 3}
@@ -525,7 +525,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1810075353
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 100
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 8769e4453ce5bc3429cfba7d58fbef13, type: 3}
@@ -683,7 +683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 4291488720
+  GlobalObjectIdHash: 3674462360
   InScenePlacedSourceGlobalObjectIdHash: 0
   DeferredDespawnTick: 0
   Ownership: 1
@@ -819,11 +819,13 @@ MonoBehaviour:
   projectileSpawnPoint: {fileID: 3429825111588254941}
   muzzleFlash: {fileID: 3583907081475955358}
   playerCollider: {fileID: 329157473904714286}
+  wallet: {fileID: 565193266756428624}
   serverProjectilePrefab: {fileID: 4864994441872248677, guid: 9344c12d1d75dee4b9fa8c31313cc8fa, type: 3}
   clientProjectilePrefab: {fileID: 2657549337736425065, guid: 624e68bbc5dd035428e0018e834906b2, type: 3}
   projectileSpeed: 30
   fireRate: 0.75
   muzzleFlashDuration: 0.075
+  costToFire: 1
 --- !u!114 &5322517672751920720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -935,7 +937,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1810075353
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 200
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: a94bf141bd2044c4399e321445c83112, type: 3}
