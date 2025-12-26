@@ -26,6 +26,11 @@ public class HostSingleton : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    private void OnDestroy()
+    {
+        GameManager?.Dispose();
+    }
+
     public void CreateHost()
     {
         GameManager = new();
