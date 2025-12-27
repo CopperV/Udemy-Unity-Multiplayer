@@ -933,7 +933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 3674462360
+  GlobalObjectIdHash: 4291488720
   InScenePlacedSourceGlobalObjectIdHash: 0
   DeferredDespawnTick: 0
   Ownership: 1
@@ -1034,6 +1034,7 @@ MonoBehaviour:
   ShowTopMostFoldoutHeaderGroup: 1
   cmCamera: {fileID: 2835962087480122052}
   <Health>k__BackingField: {fileID: 5322517672751920720}
+  <Wallet>k__BackingField: {fileID: 565193266756428624}
   cmCameraPriority: 100
   playerName:
     m_InternalValue:
