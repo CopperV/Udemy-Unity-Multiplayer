@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &9097164079319309572
+--- !u!1001 &7556274738584418448
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 476035092231757365, guid: 0b2d7c363b268bb449c13057d32fddf7, type: 3}
       propertyPath: m_Name
-      value: RespawningCoin
+      value: BountyCoin
       objectReference: {fileID: 0}
     - target: {fileID: 5020722206033129328, guid: 0b2d7c363b268bb449c13057d32fddf7, type: 3}
       propertyPath: GlobalObjectIdHash
-      value: 3443349236
+      value: 2157276016
       objectReference: {fileID: 0}
     - target: {fileID: 7165108466204892365, guid: 0b2d7c363b268bb449c13057d32fddf7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56,84 +56,39 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7992554729335557676, guid: 0b2d7c363b268bb449c13057d32fddf7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7bfd0a0977e81b84a8f1d12195e5883a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 476035092231757365, guid: 0b2d7c363b268bb449c13057d32fddf7, type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 4832909359375846888}
-    - targetCorrespondingSourceObject: {fileID: 476035092231757365, guid: 0b2d7c363b268bb449c13057d32fddf7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3546957505120103286}
+      addedObject: {fileID: 6712530011948552325}
   m_SourcePrefab: {fileID: 100100000, guid: 0b2d7c363b268bb449c13057d32fddf7, type: 3}
---- !u!212 &1212836805505667880 stripped
+--- !u!212 &447551780302026428 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 7992554729335557676, guid: 0b2d7c363b268bb449c13057d32fddf7, type: 3}
-  m_PrefabInstance: {fileID: 9097164079319309572}
+  m_PrefabInstance: {fileID: 7556274738584418448}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8693260015808365361 stripped
+--- !u!1 &7946162510662264485 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 476035092231757365, guid: 0b2d7c363b268bb449c13057d32fddf7, type: 3}
-  m_PrefabInstance: {fileID: 9097164079319309572}
+  m_PrefabInstance: {fileID: 7556274738584418448}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4832909359375846888
+--- !u!114 &6712530011948552325
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8693260015808365361}
+  m_GameObject: {fileID: 7946162510662264485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 2962e8e774aaa7e48b549fd4fac29e61, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.Components.NetworkTransform
+  m_EditorClassIdentifier: Assembly-CSharp::BountyCoin
   ShowTopMostFoldoutHeaderGroup: 1
-  NetworkTransformExpanded: 0
-  AutoOwnerAuthorityTickOffset: 1
-  PositionInterpolationType: 0
-  RotationInterpolationType: 0
-  ScaleInterpolationType: 0
-  PositionLerpSmoothing: 1
-  PositionMaxInterpolationTime: 0.1
-  RotationLerpSmoothing: 1
-  RotationMaxInterpolationTime: 0.1
-  ScaleLerpSmoothing: 1
-  ScaleMaxInterpolationTime: 0.1
-  AuthorityMode: 0
-  TickSyncChildren: 0
-  UseUnreliableDeltas: 0
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 0
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 0
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  UseQuaternionSynchronization: 0
-  UseQuaternionCompression: 0
-  UseHalfFloatPrecision: 0
-  InLocalSpace: 0
-  SwitchTransformSpaceWhenParented: 0
-  Interpolate: 0
-  SlerpPosition: 0
---- !u!114 &3546957505120103286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8693260015808365361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac51e0b564ccbf64096e9c653db0a48c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RespawningCoin
-  ShowTopMostFoldoutHeaderGroup: 1
-  spriteRenderer: {fileID: 1212836805505667880}
+  spriteRenderer: {fileID: 447551780302026428}

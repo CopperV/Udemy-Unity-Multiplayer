@@ -16,9 +16,15 @@ public class TankPlayer : NetworkBehaviour
     [field: SerializeField]
     public CoinWallet Wallet { get; private set; }
 
+    [SerializeField]
+    private SpriteRenderer minimapIcon;
+
     [Header("Settings")]
     [SerializeField]
     private int cmCameraPriority = 100;
+
+    [SerializeField]
+    private Color myColor = Color.blue;
 
     public NetworkVariable<FixedString32Bytes> playerName = new();
 
@@ -40,6 +46,7 @@ public class TankPlayer : NetworkBehaviour
         if (IsOwner)
         {
             cmCamera.Priority = cmCameraPriority;
+            minimapIcon.color = myColor;
         }
     }
 

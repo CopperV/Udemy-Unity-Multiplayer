@@ -11,6 +11,8 @@ public class NetworkServer : IDisposable
 
     private NetworkManager networkManager;
 
+    public event Action<string> OnClientLeft;
+
     public NetworkServer(NetworkManager networkManager)
     {
         this.networkManager = networkManager;
@@ -46,6 +48,7 @@ public class NetworkServer : IDisposable
         {
             clientIdToAuth.Remove(clientId);
             clientAuthToData.Remove(authId);
+            OnClientLeft?.Invoke(authId);
         }
     }
 
